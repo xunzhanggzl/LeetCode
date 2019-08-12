@@ -38,12 +38,12 @@ body {
 
 .content {
     padding-top: 20px;
-    left: 360px;
+    left: 320px;
 }
 
 .sidebar {
-    width: 360px;
-    padding: 5px;
+    width: 320px;
+    padding: 20px;
 }
 
 .markdown-section {
