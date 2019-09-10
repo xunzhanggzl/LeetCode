@@ -1,64 +1,31 @@
-# LeetCode解题记录
-
-+ [引言](init.md)
-
-## JavaScript
-
-+ [1.两数之和](JavaScript/1.两数之和.md) 
-+ [2.两数相加](JavaScript/2.两数相加.md)
-+ [9.回文数](JavaScript/9.回文数.md)
-+ [7.整数反转](JavaScript/7.整数反转.md)
-+ [17.电话号码的字母组合](JavaScript/17.电话号码的字母组合.md)
-+ [20.有效的括号](JavaScript/20.有效的括号.md)
-+ [26.删除排序数组中的重复项](JavaScript/26.删除排序数组中的重复项.md)
-+ [27.移除元素](JavaScript/27.移除元素.md)
-+ [39.组合总和](JavaScript/39.组合总和.md)
-+ [46.全排列](JavaScript/46.全排列.md)
-+ [53.最大子序和](JavaScript/53.最大子序和.md)
-+ [70.爬楼梯](JavaScript/70.爬楼梯.md)
-+ [77.组合](JavaScript/77.组合.md)
-+ [78.子集](JavaScript/78.子集.md)
-+ [94.二叉树的中序遍历](JavaScript/94.二叉树的中序遍历.md)
-+ [98.验证二叉搜索树](JavaScript/98.验证二叉搜索树.md)
-+ [101.对称二叉树](JavaScript/101.对称二叉树.md)
-+ [102.二叉树的层次遍历](JavaScript/102.二叉树的层次遍历.md)
-+ [103.二叉树的锯齿形层次遍历](JavaScript/103.二叉树的锯齿形层次遍历.md)
-+ [104.二叉树的最大深度](JavaScript/104.二叉树的最大深度.md)
-+ [105.从前序与中序遍历序列构造二叉树](JavaScript/105.从前序与中序遍历序列构造二叉树.md)
-+ [118.杨辉三角](JavaScript/118.杨辉三角.md)
-+ [136.只出现一次的数字](JavaScript/136.只出现一次的数字.md)
-+ [144.二叉树的前序遍历](JavaScript/144.二叉树的前序遍历.md)
-+ [145.二叉树的后序遍历](JavaScript/145.二叉树的后序遍历.md)
-+ [169.求众数](JavaScript/169.求众数.md)
-+ [217.存在重复元素](JavaScript/217.存在重复元素.md)
-
-
-## Python
-
-+ [1.两数之和](Python/1.两数之和.md) 
-+ [2.两数相加](Python/2.两数相加.md)
-+ [9.回文数](Python/9.回文数.md)
-<!-- + [17.电话号码的字母组合](Python/17.电话号码的字母组合.md) -->
-+ [20.有效的括号](Python/20.有效的括号.md)
-+ [26.删除排序数组中的重复项](Python/26.删除排序数组中的重复项.md)
-<!-- + [39.组合总和](Python/39.组合总和.md) -->
-<!-- + [46.全排列](Python/46.全排列.md) -->
-+ [53.最大子序和](Python/53.最大子序和.md)
-+ [70.爬楼梯](Python/70.爬楼梯.md)
-<!-- + [77.组合](Python/77.组合.md) -->
-+ [78.子集](Python/78.子集.md)
-+ [94.二叉树的中序遍历](Python/94.二叉树的中序遍历.md)
-+ [98.验证二叉搜索树](Python/98.验证二叉搜索树.md)
-+ [101.对称二叉树](Python/101.对称二叉树.md)
-+ [102.二叉树的层次遍历](Python/102.二叉树的层次遍历.md)
-+ [103.二叉树的锯齿形层次遍历](Python/103.二叉树的锯齿形层次遍历.md)
-+ [104.二叉树的最大深度](Python/104.二叉树的最大深度.md)
-+ [105.从前序与中序遍历序列构造二叉树](Python/105.从前序与中序遍历序列构造二叉树.md)
-+ [118.杨辉三角](Python/118.杨辉三角.md)
-+ [136.只出现一次的数字](Python/136.只出现一次的数字.md)
-+ [144.二叉树的前序遍历](Python/144.二叉树的前序遍历.md)
-+ [145.二叉树的后序遍历](Python/145.二叉树的后序遍历.md)
-+ [169.求众数](Python/169.求众数.md)
-+ [217.存在重复元素](Python/217.存在重复元素.md)
-
-
+* 数据结构
+  * [数组](data-structure/array/)
+  * [字符串](data-structure/string/)
+  * [链表](data-structure/linked_list/)
+  * 树
+    * [递归](data-structure/tree/recursion/)
+    * [层次遍历（BFS）](data-structure/tree/bfs/)
+    * [前中后序遍历（DFS）](data-structure/tree/dfs/)
+    * [其他](data-structure/tree/other/)
+  * [堆](data-structure/heap/)
+  * [栈](data-structure/stack/)
+  * [哈希表](data-structure/hash/)
+* 算法思想
+  * [递归](algorithm/recursion/)
+  * 排序
+    * [堆排序](algorithm/sort/heap/)
+    * [快速排序](algorithm/sort/quick/)
+    * [冒泡排序](algorithm/sort/bubble/)
+    * [其他](algorithm/sort/other/)
+  * 搜索
+    * [深度优先](algorithm/research/dfs/)
+    * [广度优先](algorithm/research/bfs/)
+    * [二分查找](algorithm/research/binary-search/)
+  * [动态规划](algorithm/dynamic/)
+  * [分治](algorithm/divide-and-conquer/)
+  * [贪心](algorithm/greedy/)
+  * [位运算](algorithm/bit/)
+  * [数学题](algorithm/math/)
+  * [回溯](algorithm/backtrack/)
+  * [双指针](algorithm/double-pointer/)
+  * [其他](algorithm/other/)
