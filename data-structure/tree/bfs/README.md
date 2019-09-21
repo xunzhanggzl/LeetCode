@@ -1,8 +1,40 @@
 ## 102. 二叉树的层次遍历
 
-[102. 二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+### 题目地址
 
-### 迭代
+https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+
+### 题目描述
+
+```
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its level order traversal as:
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+```
+
+### 思路
+
+这道题可以借助`队列`实现，然后就是while(queue.length), 每次处理一个节点，都将其子节点（在这里是left和right）放到队列中。
+
+在while循环开始时保存当前队列的长度，以保证每次只遍历一层。
+
+> 如果采用递归方式，则需要将当前节点，当前所在的level以及结果数组传递给递归函数。在递归函数中，取出节点的值，添加到level参数对应结果数组元素中。
+
+### 代码
+
+#### 迭代
 
 原理就是 BFS 一层一层地遍历，借助队列实现
 
@@ -28,10 +60,10 @@ var levelOrder = function (root) {
     let temp = [];
     let len = queue.length;
     for(let i = 0; i < len; i ++) {
-      let node = queue.shift();
-      node.left && queue.push(node.left);
-      node.right && queue.push(node.right);
-      temp.push(node.val);
+      let x = queue.shift();
+      temp.push(x.val);
+      x.left && queue.push(x.left);
+      x.right && queue.push(x.right);
     }
     res.push(temp);
   }
@@ -39,9 +71,9 @@ var levelOrder = function (root) {
 };
 ```
 
-### 递归
+#### 递归
 
-原理是 DFS，根据 res 的长度和 depth 比较，如果 `res.length <= depth`，就创建一个空的数组。
+根据 result 的长度和 depth 比较，如果 `result.length <= depth`，就创建一个空的数组。
 
 这里的 `root.left && dfs(root.left, depth+1);` 和 `root.right && dfs(root.right, depth+1);` 利用了 `JavaScript` 中 `&&` 运算符的原理。
 
@@ -59,17 +91,18 @@ var levelOrder = function (root) {
  */
 var levelOrder = function (root) {
   if (!root) return [];
-  let res = [];
-  function dfs(root, depth) {
-    if (res.length <= depth) {
-      res[depth] = [];
+  let result = [];
+
+  function recursion(root, depth) {
+    if (result.length === depth) {
+      result[depth] = [];
     }
-    res[depth].push(root.val);
-    root.left && dfs(root.left, depth+1);
-    root.right && dfs(root.right, depth+1);
+    result[depth].push(root.val);
+    root.left && recursion(root.left, depth + 1);
+    root.right && recursion(root.right, depth + 1);
   }
-  dfs(root, 0)
-  return res;
+  recursion(root, 0)
+  return result;
 };
 ```
 
